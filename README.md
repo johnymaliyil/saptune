@@ -4,13 +4,13 @@ Marketing website for **SAPTune**: tailor-made SAP solutions, built with AI, at 
 
 > *Your SAP, perfectly tuned.* · *Fine-tune your SAP. Not your budget.* · *Tailor-made SAP. Tuned by AI.*
 
-Covers SAP Retail, EWM, FI, SAP Promotions, CAR, Allocation Management, Materials Management, Order to Cash and more.
+Covers SAP Retail, EWM, FI, MM, GTS, SAP Promotions, CAR, Allocation Management and Order to Cash — plus the latest SAP technologies: RAP, ABAP Cloud, CDS, Fiori/UI5, BTP, S/4HANA Cloud, CAP, SAP Build, PI/PO, Integration Suite, Business AI & Joule, Datasphere/SAC and more.
 
 ## Structure
 
 | File | Purpose |
 |---|---|
-| `index.html` | Single-page site (hero, solutions, process, why us, engagement models, FAQ, contact) |
+| `index.html` | Single-page site (hero, solutions, technologies, process, why us, engagement models, FAQ, contact) |
 | `styles.css` | Styling, responsive layout |
 | `script.js` | Mobile menu, scroll reveal, contact form |
 | `assets/logo.svg`, `favicon.svg` | Logo (SVG recreation — replace with the original artwork if you have it) |

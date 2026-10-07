@@ -215,7 +215,7 @@ details p { color: var(--muted); margin: .8rem 0 0; }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .why, .contact-inner { grid-template-columns: 1fr; }
 }
-@media (max-width: 860px) {
+@media (max-width: 1080px) {
   .nav-toggle { display: block; }
   .nav-links {
     position: absolute; top: 70px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0;
@@ -228,6 +228,8 @@ details p { color: var(--muted); margin: .8rem 0 0; }
   .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
   .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+}
+@media (max-width: 860px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-visual { max-width: 340px; order: -1; }
   .plans { grid-template-columns: 1fr; }
@@ -240,3 +242,24 @@ details p { color: var(--muted); margin: .8rem 0 0; }
   .copy { text-align: center; }
   .chip { font-size: .75rem; }
 }
+
+/* Technologies */
+.section-dark { background: var(--ink); color: #C9C8DA; }
+.section-dark h2, .section-dark h3 { color: #fff; }
+.section-dark .section-head p:last-child { color: #A9A8C0; }
+.tech { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.tech-tile {
+  background: rgba(255, 255, 255, .04); border: 1px solid rgba(255, 255, 255, .1); border-radius: 14px; padding: 1.3rem;
+  transition: border-color .2s, background .2s, transform .2s;
+}
+.tech-tile:hover { border-color: var(--blue-2); background: rgba(106, 92, 255, .1); transform: translateY(-3px); }
+.tech-tile h3 { font-size: 1.05rem; margin-bottom: .35em; }
+.tech-tile p { margin: 0; font-size: .9rem; color: #A9A8C0; }
+.tech-tile .tag { display: inline-block; font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--cyan); margin-bottom: .6rem; }
+.tech-accent { background: var(--grad); border: 0; }
+.tech-accent p, .tech-accent .link { color: #fff; }
+.tech-accent .link { font-weight: 700; display: inline-block; margin-top: .6rem; }
+.c6 { top: 72%; left: 10%; animation-delay: -2.5s; }
+.c6::before { background: var(--cyan); }
+@media (max-width: 1000px) { .tech { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .tech { grid-template-columns: 1fr; } }
