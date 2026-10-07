@@ -329,3 +329,13 @@ details p { color: var(--muted); margin: .8rem 0 0; }
 .bridge-icons b { color: var(--cyan); font-size: 1.4rem; }
 @media (max-width: 1000px) { .sf-grid { grid-template-columns: repeat(2, 1fr); } .sf-bridge { grid-template-columns: 1fr; text-align: left; } .sf-bridge .btn { justify-self: start; } }
 @media (max-width: 480px) { .sf-grid { grid-template-columns: 1fr; } }
+
+/* All SAP modules */
+.all-modules { margin-top: clamp(3.5rem, 7vw, 5rem); }
+.mod-groups { columns: 3 320px; column-gap: 1.2rem; }
+.mod-group { break-inside: avoid; margin-bottom: 1.2rem; padding: 1.3rem; border: 1px solid var(--line); border-radius: 14px; background: var(--bg-alt); }
+.mod-group h3 { font-size: 1.02rem; margin-bottom: .8rem; }
+.mod-pills { display: flex; flex-wrap: wrap; gap: .4rem; }
+.mod-pills span { padding: .3em .75em; border-radius: 999px; background: #fff; border: 1px solid var(--line); font-size: .84rem; color: var(--text); }
+.mod-note { text-align: center; margin: 1.2rem 0 0; color: var(--muted); }
+.mod-note a { font-weight: 700; }
