@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 220" role="img" aria-label="SAPTune logo">
+  <!-- Diamond "S" -->
+  <polyline points="196,28 44,28 16,74 224,74 120,196 62,128"
+            fill="none" stroke="#3B2BD9" stroke-width="16" stroke-linejoin="miter" stroke-miterlimit="10"/>
+  <!-- "T" -->
+  <path d="M66 46 H174 L164 66 H134 V150 L120 164 L106 150 V66 H76 Z" fill="#0B0B12"/>
+</svg>
