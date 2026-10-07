@@ -26,7 +26,15 @@ Plain static HTML/CSS/JS — no build step. Open `index.html` in a browser to pr
    - `CNAME` for `www` → `<your-github-username>.github.io`
 3. Tick **Enforce HTTPS** once the certificate is issued.
 
-Netlify, Vercel or Cloudflare Pages also work — just upload the folder.
+## Deploy (Cloudflare Pages — recommended if your DNS is on Cloudflare)
+
+1. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git** → pick this repo.
+2. Production branch: the branch holding the site (e.g. `main`). Framework preset: **None**. Build command: *(leave empty)*. Build output directory: `/`.
+3. After the first deploy: the Pages project → **Custom domains → Set up a custom domain** → add `saptune.com`, then add `www.saptune.com` too. Cloudflare creates the DNS records for you.
+4. **SSL/TLS → Overview**: set mode to **Full**. **SSL/TLS → Edge Certificates**: turn on **Always Use HTTPS**.
+5. Optional: **Rules → Redirect Rules** → redirect `www.saptune.com/*` to `https://saptune.com/${1}` (301).
+
+If you use GitHub Pages instead with DNS on Cloudflare, set the four `A` records above and the `www` CNAME as **DNS only** (grey cloud) until GitHub issues its certificate; afterwards you may switch to **Proxied** with SSL mode **Full**.
 
 ## To customize
 

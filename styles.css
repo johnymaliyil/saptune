@@ -1,5 +1,5 @@
 :root {
-  --blue: #3B2BD9;
+  --blue: #2F2ECF;
   --blue-2: #6A5CFF;
   --cyan: #22D3EE;
   --ink: #0B0B12;
@@ -259,7 +259,24 @@ details p { color: var(--muted); margin: .8rem 0 0; }
 .tech-accent { background: var(--grad); border: 0; }
 .tech-accent p, .tech-accent .link { color: #fff; }
 .tech-accent .link { font-weight: 700; display: inline-block; margin-top: .6rem; }
-.c6 { top: 72%; left: 10%; animation-delay: -2.5s; }
+.c6 { top: 36%; left: -4%; animation-delay: -2.5s; }
 .c6::before { background: var(--cyan); }
 @media (max-width: 1000px) { .tech { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 480px) { .tech { grid-template-columns: 1fr; } }
+
+/* Scale: small to big */
+.scale { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; position: relative; }
+.scale-step { position: relative; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.8rem; background: #fff; }
+.scale-step .size {
+  display: grid; place-items: center; border-radius: 50%; background: var(--grad); color: #fff;
+  font-family: "Space Grotesk", sans-serif; font-weight: 700; margin-bottom: 1rem;
+}
+.scale-step:nth-child(1) .size { width: 44px; height: 44px; font-size: 1.1rem; }
+.scale-step:nth-child(2) .size { width: 56px; height: 56px; font-size: 1.4rem; }
+.scale-step:nth-child(3) .size { width: 68px; height: 68px; font-size: 1.7rem; }
+.scale-time { color: var(--blue); font-weight: 600; margin: -.2rem 0 1rem; font-size: .95rem; }
+.scale-step ul { list-style: none; padding: 0; margin: 0; }
+.scale-step li { padding: .3rem 0; color: var(--muted); }
+.scale-step li::before { content: "✓"; color: var(--blue); font-weight: 800; margin-right: .5em; }
+.scale-note { text-align: center; margin: 2rem auto 0; max-width: 720px; padding: 1rem 1.4rem; border-radius: 999px; background: var(--bg-alt); color: var(--ink); }
+@media (max-width: 860px) { .scale { grid-template-columns: 1fr; } .scale-note { border-radius: 16px; } }

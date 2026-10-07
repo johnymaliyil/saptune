@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 220" role="img" aria-label="SAPTune logo">
-  <!-- Diamond "S" -->
-  <polyline points="196,28 44,28 16,74 224,74 120,196 62,128"
-            fill="none" stroke="#3B2BD9" stroke-width="16" stroke-linejoin="miter" stroke-miterlimit="10"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="55 70 570 490" role="img" aria-label="SAPTune logo">
+  <!-- Diamond "S": top-left band -->
+  <polygon fill="#2F2ECF" points="180,80 495,80 595,200 545,200 478,125 202,125 125,230 290,230 290,275 120,275 65,220"/>
+  <!-- Diamond "S": right + bottom V band -->
+  <polygon fill="#2F2ECF" points="395,232 612,232 340,548 135,300 192,300 340,472 510,275 395,275"/>
   <!-- "T" -->
-  <path d="M66 46 H174 L164 66 H134 V150 L120 164 L106 150 V66 H76 Z" fill="#0B0B12"/>
+  <polygon fill="#030305" points="215,155 465,155 500,200 370,200 370,375 344,412 318,375 318,200 180,200"/>
 </svg>
