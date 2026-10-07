@@ -10,7 +10,7 @@ Covers SAP Retail, EWM, FI, MM, GTS, SAP Promotions, CAR, Allocation Management 
 
 | File | Purpose |
 |---|---|
-| `index.html` | Single-page site (hero, solutions, technologies, process, why us, engagement models, FAQ, contact) |
+| `index.html` | Single-page site (hero, solutions, technologies, cloud & AI apps, process, why us, engagement models, FAQ, contact) |
 | `styles.css` | Styling, responsive layout |
 | `script.js` | Mobile menu, scroll reveal, contact form |
 | `assets/logo.svg`, `favicon.svg` | Logo (SVG recreation — replace with the original artwork if you have it) |

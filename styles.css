@@ -280,3 +280,27 @@ details p { color: var(--muted); margin: .8rem 0 0; }
 .scale-step li::before { content: "✓"; color: var(--blue); font-weight: 800; margin-right: .5em; }
 .scale-note { text-align: center; margin: 2rem auto 0; max-width: 720px; padding: 1rem 1.4rem; border-radius: 999px; background: var(--bg-alt); color: var(--ink); }
 @media (max-width: 860px) { .scale { grid-template-columns: 1fr; } .scale-note { border-radius: 16px; } }
+
+/* Cloud & AI apps */
+.audience { grid-template-columns: repeat(3, 1fr); margin-bottom: 2.5rem; }
+.aud { border-radius: var(--radius); padding: 1.8rem; background: var(--bg-alt); border: 1px solid var(--line); }
+.aud:nth-child(2) { background: linear-gradient(160deg, #EEEBFF, #E3F8FC); }
+.aud:nth-child(3) { background: var(--ink); border-color: var(--ink); }
+.aud:nth-child(3) h3 { color: #fff; }
+.aud:nth-child(3) li { color: #C9C8DA; }
+.aud-tag { display: inline-block; font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #fff; background: var(--blue); padding: .3em .9em; border-radius: 999px; margin-bottom: 1rem; }
+.aud:nth-child(3) .aud-tag { background: var(--cyan); color: var(--ink); }
+.aud ul { list-style: none; padding: 0; margin: 0; }
+.aud li { padding: .3rem 0; color: var(--muted); }
+.aud li::before { content: "✓"; color: var(--blue-2); font-weight: 800; margin-right: .5em; }
+.app-grid { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.app { border: 1px solid var(--line); border-radius: 14px; padding: 1.3rem; background: #fff; transition: transform .2s, box-shadow .2s, border-color .2s; }
+.app:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: #C9C3FF; }
+.app .icon { font-size: 1.5rem; margin-bottom: .5rem; }
+.app h3 { font-size: 1.02rem; margin-bottom: .3em; }
+.app p { margin: 0; color: var(--muted); font-size: .9rem; }
+.platforms { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .6rem; margin-top: 2.2rem; }
+.platforms span { padding: .45em 1em; border: 1px solid var(--line); border-radius: 999px; font-weight: 600; font-size: .9rem; color: var(--ink); background: #fff; }
+.platforms .platforms-label { border: 0; background: none; color: var(--muted); font-weight: 500; }
+@media (max-width: 1000px) { .audience { grid-template-columns: 1fr; } .app-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .app-grid { grid-template-columns: 1fr; } }
